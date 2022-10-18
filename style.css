@@ -1,0 +1,62 @@
+body{
+    font-family: Roboto ;
+    min-height: 1000px;
+    background-image: linear-gradient(to bottom right, rgb(247, 108, 108), rgb(248, 14, 14));
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+h1, h3, h4{
+    text-align: center;
+}
+
+h4{
+    margin-bottom: 5px;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.today{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.time-tile{
+    border: white 1px solid;
+    height: 80px;
+    width: 80px;
+    padding-top:20px;
+    border-radius: 10px;
+    background-color: rgb(252, 175, 175);
+}
+
+
+.time-tile p{
+    border: 1px solid rgb(255, 87, 87);
+    width: 40px;
+    margin: auto;
+    margin-top:10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(255, 87, 87);
+    border-bottom: 2px solid rgb(209, 5, 5);
+    border-right: 2px solid rgb(209, 5, 5);
+}
+
+@media (min-width:768px){
+    .time-tile{
+        height: 200px;
+        width: 300px;
+        font-size: 3rem;
+    }
+
+    .time-tile p{
+        width: 100px;
+    }
+}
