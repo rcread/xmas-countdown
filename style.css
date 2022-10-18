@@ -1,7 +1,9 @@
 body{
     font-family: Roboto ;
     min-height: 1000px;
-    background-image: linear-gradient(to bottom right, rgb(247, 108, 108), rgb(248, 14, 14));
+    background-image: url("xmas-portrait.jpg");
+    background-size: cover;
+    background-position: left;
     color: white;
     text-shadow: 1px 1px black;
 }
@@ -10,13 +12,17 @@ h1, h3, h4{
     text-align: center;
 }
 
+h3{
+    margin: 0;
+}
+
 h4{
     margin-bottom: 5px;
 }
 
 .countdown{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     justify-content: space-around;
     align-items: center;
@@ -28,12 +34,12 @@ h4{
 }
 
 .time-tile{
-    border: white 1px solid;
     height: 80px;
     width: 80px;
-    padding-top:20px;
+    padding:10px;
+    margin: 10px;
     border-radius: 10px;
-    background-color: rgb(252, 175, 175);
+    background-color: rgb(252, 175, 175, 0.5);
 }
 
 
@@ -50,10 +56,29 @@ h4{
 }
 
 @media (min-width:768px){
+
+    body{
+        background-image: url("xmas-landscape.jpg");
+        background-position: center-bottom;
+        height: 100%;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h4, h3, .today{
+        font-size: 30px;
+    }
+    .countdown{
+        flex-direction: row;
+    }
+
     .time-tile{
         height: 200px;
         width: 300px;
         font-size: 3rem;
+        margin: 10px;
     }
 
     .time-tile p{
