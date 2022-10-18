@@ -1,14 +1,3 @@
-// var countdownDate = new Date("Dec 25, 2022 00:00:00").getTime();
-// var now = new Date();
-// var timeLeft = countdownDate - now;
-
-// var todayDay = String(now.getDate()).
-
-// var hours = new Date("Dec 24, 2022 23:59:59");
-// var christmasHour = hours.getHours() - (new Date().getHours);
-// console.log(christmasHour);
-
-
 let todaysDate = new Date();
 var dd = String(todaysDate.getDate()).padStart(2, '0');
 var mm = String(todaysDate.getMonth() + 1).padStart(2, '0'); 
@@ -16,8 +5,6 @@ var yyyy = todaysDate.getFullYear();
 
 todaysDate = dd + '/' + mm + '/' + yyyy;
 document.getElementById('todayDate').innerHTML = todaysDate;
-
-
 
 let addZero = num => num < 10 ? `0${num}`: num;
 
@@ -62,5 +49,3 @@ function countdown(){
 
 let i = setInterval(countdown, 1000);
 countdown();
-
-
