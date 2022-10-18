@@ -2,8 +2,9 @@ body{
     font-family: Roboto ;
     min-height: 1000px;
     background-image: url("xmas-portrait.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: right;
     color: white;
     text-shadow: 1px 1px black;
 }
