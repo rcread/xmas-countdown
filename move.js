@@ -29,15 +29,15 @@ function countdown(){
     let secsUntil = document.getElementById("secs");
 
     let today = new Date();
-    console.log(today);
+    // console.log(today);
     let todayTime = today.getTime();
-    console.log(todayTime);
+    // console.log(todayTime);
 
     let christmasDay = new Date(2022, 11, 25, 0, 0);
-    console.log(christmasDay);
+    // console.log(christmasDay);
     let christmasTime = christmasDay.getTime();
     let timeUntil = christmasTime - todayTime;
-    console.log(timeUntil);
+    // console.log(timeUntil);
 
     if(christmasTime < todayTime){
         clearInterval(i);
@@ -51,7 +51,7 @@ function countdown(){
     let hoursLeft = Math.floor((timeUntil % oneDay) / oneHour);
     let minsLeft = Math.floor((timeUntil % oneHour) / oneMin);
     let secsLeft = Math.floor((timeUntil % oneMin) / 1000);
-    console.log(daysLeft, hoursLeft, minsLeft, secsLeft);
+    // console.log(daysLeft, hoursLeft, minsLeft, secsLeft);
 
     daysUntil.textContent = addZero(daysLeft);
     hoursUntil.textContent = addZero(hoursLeft);
