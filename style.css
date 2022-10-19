@@ -70,7 +70,6 @@ h4{
         align-items: center;
     }
 
-
     main{
         align-items: center;
         text-align: center;
@@ -78,6 +77,16 @@ h4{
         flex-direction: column;
     }
 
+    .time-tile{
+        height: 150px;
+        width: 200px;
+        font-size: 2rem;
+    }
+
+    .time-tile p{
+        width: 100px;
+        height: 70px;
+    }
 }
 
 
@@ -98,11 +107,6 @@ h4{
         font-size: 30px;
     }
 
-    .countdown{
-        display: flex;
-        flex-direction: row;
-    }
-
     .time-tile{
         height: 200px;
         width: 300px;
@@ -112,5 +116,38 @@ h4{
 
     .time-tile p{
         width: 100px;
+    }
+}
+
+@media (min-width: 1024px){
+    .countdown{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .time-tile{
+        height: 200px;
+        width: 200px;
+        font-size: 3rem;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1200px){
+    .countdown{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .time-tile{
+        padding-top: 50px;
+        height: 250px;
+        width: 250px;
+        font-size: 3rem;
+        margin: 10px;
+    }
+
+    .time-tile p{
+        width: 200px;
     }
 }
